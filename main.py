@@ -8,7 +8,7 @@ from sqlalchemy.orm import sessionmaker
 app = FastAPI()
 
 # Configurar base de datos
-DATABASE_URL = "mysql+pymysql://tu_usuario:tu_contraseña@tu_host:3306/tu_base_de_datos"
+DATABASE_URL = "mysql+pymysql://admin:CDAR159930j@basedatosfastapi.c1660ow0ylh2.us-east-1.rds.amazonaws.com:3306/fastapi_db"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
